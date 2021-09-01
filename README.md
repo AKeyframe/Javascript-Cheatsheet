@@ -21,18 +21,39 @@ let arrayName = [];
 
 # Control Flow
 
-# Scope
+```js
+// For Loop 
+for(let i=0; i<10; i++){ }
+``` 
+```js
+//While Loop
+let i=0;
+while(i<=10){
+	i++
+}
+```
 
-- `Global scope`: There's always a single global scope which lives at the top of the scope chain. Variables innitialized can be called from from anywhere.
-- `Local/Function scope`: Every time a function runs, it creates its own scope. Variable innitialized here can be called only from inside the `{ }`where it was innitialized or within any `{}`'s contained within the original.
-- `Block scope`: This scope is courtesy of ES2015's `let` & `const` keywords and in general, defines a scope within a code block defined using curly braces.
+```js
+// Do While Loop
+let i=0;
+do{
+	i++
+} while (i <=10);
+```
+```js
+// If
+let i=0;
+if(i === 1){
+	
+} /* Else If */ 
+else if (i === 2) {
 
-![Scope](Images/scope.png)
+} //Else
+else {
 
-In the example above
-- var a can be accessed anywhere.
-- var b can be accessed by foo() and bar()
-- var c can only be accessed by bar()
+}
+```
+
 
 # Functions
 ## Different Types of Functions
@@ -61,6 +82,22 @@ All arrow functions are Function Expressions. [Ream More](https://developer.mozi
 
 `Paramaters` are the placeholders for inputs the function should recieve
 `Arguments` are the specific values of the inputs we give the function when it's called. 
+
+
+# Scope
+
+- `Global scope`: There's always a single global scope which lives at the top of the scope chain. Variables innitialized can be called from from anywhere.
+- `Local/Function scope`: Every time a function runs, it creates its own scope. Variable innitialized here can be called only from inside the `{ }`where it was innitialized or within any `{}`'s contained within the original.
+- `Block scope`: This scope is courtesy of ES2015's `let` & `const` keywords and in general, defines a scope within a code block defined using curly braces.
+
+![Scope](Images/scope.png)
+
+In the example above
+- var a can be accessed anywhere.
+- var b can be accessed by foo() and bar()
+- var c can only be accessed by bar()
+
+
 
 
 <br />
