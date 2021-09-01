@@ -27,7 +27,7 @@ let arrayName = [];
 - `Local/Function scope`: Every time a function runs, it creates its own scope. Variable innitialized here can be called only from inside the `{ }`where it was innitialized or within any `{}`'s contained within the original.
 - `Block scope`: This scope is courtesy of ES2015's `let` & `const` keywords and in general, defines a scope within a code block defined using curly braces.
 
-![Scope](Images/Scope.png)
+![Scope](Images/scope.png)
 In the example above
 - var a can be accessed anywhere.
 - var b can be accessed by foo() and bar()
