@@ -5,10 +5,10 @@ let arrayName = [];
 ```
 
 Any entries with Read More sections have optional arguments.
-- `arrayName.push()`: Adds an element to the end of an array
-- `arrayName.pop()`: Removes the last element in the array
-- `arrayName.unshift()`: Adds an element to the beginning of an array
-- `arrayName.shift()`: Removes the first element in the array
+- `arrayName.push(element)`: Adds an element to the end of an array [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
+- `arrayName.pop()`: Removes the last element from an array and returns that element. This method changes the length of the array.
+- `arrayName.unshift(element)`: Adds one or more elements to the beginning of an array and returns the new length of the array. [Read More](adds one or more elements to the beginning of an array and returns the new length of the array. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
+- `arrayName.shift()`: removes the first element from an array and returns that removed element. This method changes the length of the array.
 - `arrayName.slice(start, stop)`: Access part of an array without modifying it. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
 - `arrayName.splice(start, numDeleting, item, ...)`: Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
 - `arrayName.indexOf(element)`: Returns the first index at which a given element can be found in the array, or -1 if it is not present. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
@@ -16,6 +16,8 @@ Any entries with Read More sections have optional arguments.
 - `arrayName.includes(element)`: Determines if an array includes a certain value among its entries, returning true or false as appropriate. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
 - `arrayName.reverse()`: Reverses an array in place. The first array element becomes the last, and the last array element becomes the first.
 - `arrayName.sort()`: Sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
+
+# Control Flow
 
 
 # Functions
