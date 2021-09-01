@@ -28,6 +28,7 @@ let arrayName = [];
 - `Block scope`: This scope is courtesy of ES2015's `let` & `const` keywords and in general, defines a scope within a code block defined using curly braces.
 
 ![Scope](Images/scope.png)
+
 In the example above
 - var a can be accessed anywhere.
 - var b can be accessed by foo() and bar()
