@@ -16,6 +16,7 @@ Any entries with Read More sections have optional arguments.
 - `arrayName.includes(element)`: Determines if an array includes a certain value among its entries, returning true or false as appropriate. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
 - `arrayName.reverse()`: Reverses an array in place. The first array element becomes the last, and the last array element becomes the first.
 - `arrayName.sort()`: Sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
+- `arrayName.forEach()`: Executes a provided function once for each array element. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
 # Control Flow
 
