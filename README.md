@@ -1,14 +1,15 @@
 
 # Arrays
-`arrayName.push()`: Adds an element to the end of an array
-`arrayName.pop()`: Removes the last element in the array
-`arrayName.unshift()`: Adds an element to the beginning of an array
-`arrayName.shift()`: Removes the first element in the array
-`arrayName.slice(start, stop)`: Access part of an array without modifying it.[More about Slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
-`arrayName.splice(start, numDeleting, item, ...)`: Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place. [More about Splice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
+- `arrayName.push()`: Adds an element to the end of an array
+- `arrayName.pop()`: Removes the last element in the array
+- `arrayName.unshift()`: Adds an element to the beginning of an array
+- `arrayName.shift()`: Removes the first element in the array
+- `arrayName.slice(start, stop)`: Access part of an array without modifying it. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
+- `arrayName.splice(start, numDeleting, item, ...)`: Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
 
 
-## Functions
+# Functions
+## Different Types of Functions
 Function Decloration
 ```js
 function sayHello(name){
@@ -38,6 +39,8 @@ function add(a, b) {
 
 Functions in javascript are a callable objects
 
+<br />
+<br />
 
 # Javascipt "Theory"
 (For anyone actually using this I'll probably move this section to it's own thing eventually but for now I'm just going to leave this here.)
