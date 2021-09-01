@@ -1,10 +1,11 @@
 
 # Arrays
+Any entries with Read More sections have optional arguments.
 ```
 let arrayName = [];
 ```
 
-Any entries with Read More sections have optional arguments.
+
 - `arrayName.push(element)`: Adds an element to the end of an array [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
 - `arrayName.pop()`: Removes the last element from an array and returns that element. This method changes the length of the array.
 - `arrayName.unshift(element)`: Adds one or more elements to the beginning of an array and returns the new length of the array. [Read More](adds one or more elements to the beginning of an array and returns the new length of the array. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
@@ -20,6 +21,17 @@ Any entries with Read More sections have optional arguments.
 
 # Control Flow
 
+# Scope
+
+- `Global scope`: There's always a single global scope which lives at the top of the scope chain. Variables innitialized can be called from from anywhere.
+- `Local/Function scope`: Every time a function runs, it creates its own scope. Variable innitialized here can be called only from inside the `{ }`where it was innitialized or within any `{}`'s contained within the original.
+- `Block scope`: This scope is courtesy of ES2015's `let` & `const` keywords and in general, defines a scope within a code block defined using curly braces.
+
+![Scope](Images/Scope.png)
+In the example above
+- var a can be accessed anywhere.
+- var b can be accessed by foo() and bar()
+- var c can only be accessed by bar()
 
 # Functions
 ## Different Types of Functions
