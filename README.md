@@ -78,7 +78,8 @@ else {
 
 ```js
 // Ternary Operator 
-// ? when used like this will retrun the first thing after the ? if the statement befoe is true, and will return the statement after the : if it isn't.
+// ? when used like this, will retrun the first thing after the ? if the statement befoe is true.
+// will return the statement after the : if it isn't.
 let message = score > 100 ? "You rock!" : "Keep trying!"
 
 //The above is bascially saying this:
