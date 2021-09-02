@@ -36,9 +36,12 @@ let arrayName = [];
 - `.sort()`: Sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 - `.forEach(function(element){...});`: Executes a provided function once for each array element. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
+<br />
+<br />
 
-
-# Control Flow
+# Control Flow [[RM]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements)
+- `break;`: Terminates the current loop, switch, or label statement and transfers program control to the statement following the terminated statement.
+- `continue;`: Terminates execution of the statements in the current iteration of the current or labeled loop, and continues execution of the loop with the next iteration.
 
 ```js
 // For Loop 
@@ -70,6 +73,43 @@ else if (i === 2) {
 } //Else
 else {
 
+}
+```
+
+```js
+// Ternary Operator 
+// ? when used like this will retrun the first thing after the ? if the statement befoe is true, and will return the statement after the : if it isn't.
+let message = score > 100 ? "You rock!" : "Keep trying!"
+
+//The above is bascially saying this:
+let message;
+if(score > 100){
+	message = "you rock!"
+}
+else{
+	message = "Keep trying!"
+}
+
+// Another Exacmple (taken from #5 of the JS functions Lab)
+total = i === 0 ? array[i] : total*array[i];
+
+```
+
+```js
+//Switch Statment
+// Switch statments evaluates an expression, matching the expression's value to a case clause, and executes statements associated with that case, as well as statements in cases that follow the matching case.
+let yourVariable = 5;
+switch (yourVariable) {
+  case 0: // you can put anything here
+    console.log('Your variable is 0');
+    break;
+  
+  case 5: 
+    console.log('Your variable is 5');
+    break;
+
+  default:
+    console.log(`Your variable doesn't match`);
 }
 ```
 
@@ -122,7 +162,39 @@ In the example above
 <br />
 <br />
 
+# Objects
+Javascript classifies these as Ojbects:
+- Arrays 
+- Objects 
+- Function
+- RegEx
+- Date
 
+Objects we create: 
+```js
+
+//Object Literal Syntax
+const player = {
+	score: 0,
+	lives: 3,
+	health: 100
+};
+
+//to call any of these
+//Dot Notation
+console.log(player.score);
+
+//Bracket Notation
+console.log(player['lives']);
+
+
+//Another way to create an object
+const me = Object.create(person);
+```
+[More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create) on creating an object with `Object.create()`
+
+
+# Classes
 
 # Javascipt "Theory"
 (For anyone actually using this I'll probably move this section to it's own thing eventually but for now I'm just going to leave this here.)
@@ -131,18 +203,11 @@ In the example above
 Functions in javascript are a callable objects
 
 
-## Objects
-Objects in javascript are like hashmaps and hashtables in other programming languages. 
-
-Example of Ojbects:
-- Arrays
-- Objects 
-- Function
-- RegEx
-- Date
-
-
 ## Const and Objects
+Objects in javascript are like hashmaps and hashtables in other programming languages.
+
+<br />
+
 We can change variabls and values within objects even if they are constant
 ![Image](Images/image.png)
 When innitalizing an object as a const we can change the variables or data within the object without running into errors. This is because the object itself, when initialized, is refering to a pointer we created in the memory. This pointer lets the computer know where the other variables or data is but the actual value is still remaing constant. 
