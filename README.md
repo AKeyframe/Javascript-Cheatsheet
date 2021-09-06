@@ -130,7 +130,8 @@ total = i === 0 ? array[i] : total*array[i];
 
 ```js
 //Switch Statment
-// Switch statments evaluates an expression, matching the expression's value to a case clause, and executes statements associated with that case, as well as statements in cases that follow the matching case.
+// Switch statments evaluates an expression, matching the expression's value to a case clause.
+// Then executing statements associated with that case, as well as statements in cases that follow the matching case.
 let yourVariable = 5;
 switch (yourVariable) {
   case 0: // you can put anything here
