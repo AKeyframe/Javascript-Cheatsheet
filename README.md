@@ -1,40 +1,72 @@
+# To Anyone Reading This
+- I've tried to cut out the technical langue used on the Mozilla site but in doing so, some points might not be 100% accurte. I recomend the "Read More" links if you want a thorough explination / examples. If there isn't a "Read More" for what you're looking at, check the catagory "[RM]" section. (Ex: The strings [RM] when wanting to look up `.toLowerCase()`) 
+
+- Anything with a read more secotion has optional arguments or can be used in multiple ways.
+
 # Strings [[RM]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
-Any entries with Read More sections have optional arguments.
+
 
 ```js
 let stringName = "hello world";
 ```
+
+## Properties
 - `.length`: Returns the legth of the string.
-- `.toLowerCase()`: Returns the calling string value converted to lower case.
-- `.toUpperCase()`: Returns the calling string value coverted to upper case.
-- `.split("")`: divides a String into an ordered list of substrings, puts these substrings into an array, and returns the array.  The division is done by searching for a pattern; where the pattern is provided as the first parameter in the method's call. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
-- `.concat(string)`:  Concatenates the string arguments into a single new string and returns that string. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat)
-- `.includes(string)`: Method performs a case-sensitive search to determine whether one string may be found within another string, returning true or false as appropriate. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
-- `.replace(subString, newSubstring)`: Returns a new string with some or all matches of a pattern replaced by a replacement. The pattern can be a string or a RegExp, and the replacement can be a string or a function to be called for each match. If pattern is a string, only the first occurrence will be replaced. The original string is left unchanged. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
-- `.replaceAll(subString, newSubstring)`: returns a new string with all matches of a pattern replaced by a replacement. The pattern can be a string or a RegExp, and the replacement can be a string or a function to be called for each match. The original string is left unchanged. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll)
-- `.slice(beginIndex, endIndex)`: extracts a section of a string and returns it as a new string, without modifying the original string. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
+
+## Methods
+- `.toLowerCase()`: Returns the given string but converted to lower case.
+- `.toUpperCase()`: Returns the given string but coverted to upper case.
+- `.split(parameter)`: Splits what's in the string into an array, and returns the array.  The division is done by searching for a pattern provided as an argument. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
+- `.concat(" ", string)`:  Combines the initial string and the arguments into a single new string and returns that string. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat)
+- `.includes(string)`: Method performs a case-sensitive search to determine whether the string provided can be found witin the initial one. Returning true or false as appropriate. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
+- `.replace(subString, newSubstring)`: Returns a copy of the given string with the first instance of the `subString` being replaced by the `newSubString`. The original string is left unchanged. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
+- `.replaceAll(subString, newSubstring)`: Returns a copy of the given string with the all instances of the `subString` being replaced by the `newSubString`. The original string is left unchanged. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll)
+- `.slice(beginIndex, endIndex)`: Creates and returns a new string that is made up of a portion of the original string. Starting from the `beginIndex` value through the `endIndex` value. This does not change the original string. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
 
 
 
 # Arrays [[RM]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
-Any entries with Read More sections have optional arguments.
+
 ```js
 let arrayName = [];
 ```
 
+
+## Properties
+- `.length`: Retruns the length of the array. 
+
+
+## Methods
 - `.push(element)`: Adds an element to the end of an array [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
+
 - `.pop()`: Removes the last element from an array and returns that element. This method changes the length of the array.
-- `.unshift(element)`: Adds one or more elements to the beginning of an array and returns the new length of the array. [Read More](adds one or more elements to the beginning of an array and returns the new length of the array. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
-- `.shift()`: removes the first element from an array and returns that removed element. This method changes the length of the array.
-- `.slice(start, stop)`: Access part of an array without modifying it. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
+
+- `.unshift(element)`: Adds one or more elements to the beginning of an array and returns the new length of the array. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
+
+- `.shift()`: Removes the first element from an array and returns that removed element. This method changes the length of the array.
+
+- `.slice(startIndex, stopIndex)`: Returns a copy of part of an array from `startIndex` to `stopIndex` of the initial array. The origianl array will not be modified. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
+
 - `.splice(start, numDeleting, item, ...)`: Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
+
 - `.indexOf(element)`: Returns the first index at which a given element can be found in the array, or -1 if it is not present. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
+
 - `.lastIndexOf(element)`: Returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf)
+
 - `.includes(element)`: Determines if an array includes a certain value among its entries, returning true or false as appropriate. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
+
 - `.reverse()`: Reverses an array in place. The first array element becomes the last, and the last array element becomes the first.
-- `.join("")`: creates and returns a new string by concatenating all of the elements in an array (or an array-like object), separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
+
+- `.join(" ")`: creates and returns a new string by combining all of the elements in an array (or an array-like object), separated by the argument provided. If the array has only one item, then that item will be returned without using the separator. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
+
 - `.sort()`: Sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+
 - `.forEach(function(element){...});`: Executes a provided function once for each array element. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+
+- `.filter(function(element){...});`: Creates a new array out of every element of the initial array that pass the test given by the provided function. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+
+- `.map(function(element){...});`: Creates a new array that contains every elemnt of the initial array after being passes through the provided function. An example being if you wanted to multiply everythig in the initial array by 2. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+
 
 <br />
 <br />
@@ -143,7 +175,8 @@ function add(a, b) {
 ```
 All arrow functions are Function Expressions. [Ream More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
-`Paramaters`: are the placeholders for inputs the function should recieve
+`Paramaters`: are the placeholders for inputs the function should recieve.
+
 `Arguments`: are the specific values of the inputs we give the function when it's called. 
 
 
@@ -181,7 +214,7 @@ const player = {
 	health: 100
 };
 
-//to call any of these
+//to call any of these properties
 //Dot Notation
 console.log(player.score);
 
