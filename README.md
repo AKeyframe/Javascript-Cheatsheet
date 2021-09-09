@@ -57,9 +57,9 @@ let arrayName = [];
 
 - `.reverse()`: Reverses an array in place. The first array element becomes the last, and the last array element becomes the first.
 
-- `.join(" ")`: creates and returns a new string by combining all of the elements in an array (or an array-like object), separated by the argument provided. If the array has only one item, then that item will be returned without using the separator. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
+- `.join("")`: Creates and returns a new string by combining all of the elements in an array (or an array-like object), separated by the argument provided. If the array has only one item, then that item will be returned without using the separator. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 
-- `.sort()`: Sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+- `.sort(function(AEle, BEle){...})`: Sorts the elements of an array in place and returns the sorted array. Returns a value > than 0, sort BEle before Ale. Returns a value < than 0, sort AEle before BEle. Returns 0, AEle and BEle are considered equal. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 
 - `.forEach(function(element){...});`: Executes a provided function once for each array element. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
@@ -67,7 +67,7 @@ let arrayName = [];
 
 - `.map(function(element){...});`: Creates a new array that contains every elemnt of the initial array after being passes through the provided function. An example being if you wanted to multiply everythig in the initial array by 2. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
-- `.reduce()`: Reduce an array into a single value. The single value can be a number, object, array, or anything. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce).
+- `.reduce(function(acc,element){...})`: Reduce an array into a single value. The single value can be a number, object, array, or anything. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce).
 
 - `.find(function(element){...});`: Find an element within an array. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
 
