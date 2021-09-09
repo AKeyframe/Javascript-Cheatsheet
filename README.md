@@ -67,6 +67,17 @@ let arrayName = [];
 
 - `.map(function(element){...});`: Creates a new array that contains every elemnt of the initial array after being passes through the provided function. An example being if you wanted to multiply everythig in the initial array by 2. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
+- `.reduce()`: Reduce an array into a single value. The single value can be a number, object, array, or anything. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce).
+
+- `.find(function(element){...});`: Find an element within an array. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
+
+- `.findIndex(function(element){...});`: Returns the found element's index. Note that this is usually used to find the index of an object. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)
+
+- `.some(function(element){...});`: Checks to see if the array has at least one element that meets a certain condition. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)
+
+- `.every(function(element){...});`: Check if every element in the array meets a certain condition.
+
+
 
 <br />
 <br />
