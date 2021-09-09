@@ -73,7 +73,7 @@ let arrayName = [];
 
 - `.findIndex(function(element){...});`: Returns the found element's index. Note that this is usually used to find the index of an object. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)
 
-- `.some(function(element){...});`: Checks to see if the array has at least one element that meets a certain condition. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)
+- `.some(function(element){...});`: Checks to see if the array has at least one element that meets a certain condition. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
 
 - `.every(function(element){...});`: Check if every element in the array meets a certain condition. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
 
