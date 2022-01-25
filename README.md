@@ -1,4 +1,4 @@
-# To Anyone Reading This
+# To My Classmates Reading This
 - I've tried to cut out the technical langue used on the Mozilla site but in doing so, some points might not be 100% accurte. I recomend the "Read More" links if you want a thorough explination / examples. If there isn't a "Read More" for what you're looking at, check the catagory "[RM]" section. (Ex: The strings [RM] when wanting to look up `.toLowerCase()`) 
 
 - Anything with a read more secotion has optional arguments or can be used in multiple ways.
@@ -238,24 +238,3 @@ console.log(player['lives']);
 const me = Object.create(person);
 ```
 [More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create) on creating an object with `Object.create()`
-
-
-# Classes
-
-# Javascipt "Theory"
-(For anyone actually using this I'll probably move this section to it's own thing eventually but for now I'm just going to leave this here.)
-
-
-Functions in javascript are a callable objects
-
-
-## Const and Objects
-Objects in javascript are like hashmaps and hashtables in other programming languages.
-
-<br />
-
-We can change variabls and values within objects even if they are constant
-![Image](Images/image.png)
-When innitalizing an object as a const we can change the variables or data within the object without running into errors. This is because the object itself, when initialized, is refering to a pointer we created in the memory. This pointer lets the computer know where the other variables or data is but the actual value is still remaing constant. 
-
-
